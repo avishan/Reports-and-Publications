@@ -1,19 +1,12 @@
 
 Report title "Runtime Monitoring in Adaptive systems"
-Abstract. By changing an environment, some adverse conditions may happen, which does not allow
-the system to satisfy its high-level goals anymore. These adverse conditions, called obstacles, can be
-resolved through countermeasures. Therefore, the system analyst performs obstacle analysis cycles to
-identify obstacles, assess their likelihood and criticality, and finally propose proper countermeasures to
-solve them. In this way, the system can be adapted to the new environment, and satisfaction rates of
-its high-level goals stay higher than target levels. At requirements engineering time, experts estimate
-the satisfaction rates of probabilistic obstacles and goals. However, these estimations can be inaccurate
-since environment properties or assumptions might have changed, or some variables might be hard
-costly to estimate at this time. Thus,monitoring the actual satisfaction rate of obstacles at system runtime helps obtain more information and better estimations. Based on this idea. This paper proposes
-an obstacle-driven run-time adaptation approach that defers obstacle resolution to system run-time.
-In the proposed approach, first, an AND/OR goal refinement tree is built to define systems’ goals
-and obstacles. Then, a formal characterization of satisfaction rates of goals and obstacles is provided
-in terms of observed states and behaviors. Next, by monitoring probabilistic obstacles at run-times,
-the satisfaction rates of goals are obtained by uppropagation through obstacle/goal refinement tree.
-Whenever a goal’s satisfaction rate decreases below its target level, more appropriate countermeasures
-are chosen instead of current ones to increase the satisfaction rate of the system’s goals above the
-required degree
+This report discusses an approach to adapting a system in response to changing environments that create obstacles, which prevent the system from achieving its high-level goals. The process involves identifying and addressing these obstacles by implementing countermeasures that maintain the satisfaction rates of the system’s goals above target levels. Traditionally, estimates of these satisfaction rates are made during requirements engineering, but they can be inaccurate due to environmental changes or estimation challenges. To improve accuracy, this approach suggests monitoring the system at runtime to measure actual satisfaction rates.
+
+The proposed obstacle-driven, run-time adaptation approach involves several steps:
+
+    Goal and Obstacle Definition: An AND/OR goal refinement tree is created to clearly outline system goals and potential obstacles.
+    Satisfaction Rate Characterization: Goals and obstacles are formally characterized by observed states and behaviors.
+    Real-time Monitoring: The satisfaction rates of probabilistic obstacles are monitored at runtime, and these rates are propagated through the goal refinement tree.
+    Dynamic Countermeasures: When a goal's satisfaction rate falls below the target level, alternative countermeasures are applied to restore goal satisfaction to acceptable levels.
+
+This method enables the system to respond dynamically to obstacles in real time, maintaining its performance and adapting to new conditions efficiently.
